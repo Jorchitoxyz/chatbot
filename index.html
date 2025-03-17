@@ -3,67 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corazón Centrado con CSS y JavaScript</title>
+    <title>Lenguajes de Programación</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-
-        .heart {
-            position: relative;
-            width: 100px;
-            height: 90px;
-            background-color: red;
-            transform: rotate(-45deg);
-            animation: pulse 1s infinite alternate;
-        }
-
-        .heart::before,
-        .heart::after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 90px;
-            background-color: red;
-            border-radius: 50%;
-        }
-
-        .heart::before {
-            top: -50px;
-            left: 0;
-        }
-
-        .heart::after {
-            top: 0;
-            left: 50px;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: rotate(-45deg) scale(1);
-            }
-            100% {
-                transform: rotate(-45deg) scale(1.1);
-            }
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        .language { margin-bottom: 20px; }
+        img { width: 200px; height: auto; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <div class="heart"></div>
-    <script>
-        const heart = document.querySelector('.heart');
+    <h1>Lenguajes de Programación</h1>
+    
+    <div class="language">
+        <h2>Python</h2>
+        <p>Python es un lenguaje de programación interpretado, fácil de aprender y ampliamente utilizado en desarrollo web, ciencia de datos e inteligencia artificial.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Logo de Python">
+    </div>
+    
+    <div class="language">
+        <h2>JavaScript</h2>
+        <p>JavaScript es un lenguaje de programación esencial para el desarrollo web, permitiendo la creación de contenido dinámico en sitios web.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo de JavaScript">
+    </div>
+    
+    <div class="language">
+        <h2>C++</h2>
+        <p>C++ es un lenguaje de programación potente y de alto rendimiento, usado en el desarrollo de sistemas, videojuegos y aplicaciones críticas.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="Logo de C++">
+    </div>
 
-        heart.addEventListener('click', () => {
-          heart.style.backgroundColor = 'pink';
-          setTimeout(() => {
-            heart.style.backgroundColor = 'red';
-          }, 500);
-        });
-    </script>
     <script>
   window.watsonAssistantChatOptions = {
     integrationID: "1526e267-c1f0-45bc-9e47-0024211bb532", // The ID of this integration.
@@ -79,3 +46,4 @@
 </script>
 </body>
 </html>
+
