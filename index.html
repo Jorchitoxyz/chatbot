@@ -3,47 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenguajes de Programación</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
-        .language { margin-bottom: 20px; }
-        img { width: 200px; height: auto; display: block; margin-top: 10px; }
-    </style>
+    <title>Explora los Lenguajes de Programación</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Lenguajes de Programación</h1>
-    
-    <div class="language">
-        <h2>Python</h2>
-        <p>Python es un lenguaje de programación interpretado, fácil de aprender y ampliamente utilizado en desarrollo web, ciencia de datos e inteligencia artificial.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Logo de Python">
-    </div>
-    
-    <div class="language">
-        <h2>JavaScript</h2>
-        <p>JavaScript es un lenguaje de programación esencial para el desarrollo web, permitiendo la creación de contenido dinámico en sitios web.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo de JavaScript">
-    </div>
-    
-    <div class="language">
-        <h2>C++</h2>
-        <p>C++ es un lenguaje de programación potente y de alto rendimiento, usado en el desarrollo de sistemas, videojuegos y aplicaciones críticas.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="Logo de C++">
-    </div>
+    <header>
+        <h1>Descubre el Mundo de la Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#conclusiones">Conclusiones</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="intro">
+            <h2>¿Qué son los Lenguajes de Programación?</h2>
+            <p>Breve explicación general sobre qué son y para qué sirven los lenguajes de programación. Aquí podrías incluir una animación simple con CSS o JavaScript que muestre el flujo de información en un programa.</p>
+            <div class="animation intro-animation">
+                </div>
+        </section>
+
+        <section id="python">
+            <h2>Python</h2>
+            <div class="language-info">
+                <div class="language-image">
+                    <img src="python-logo.png" alt="Logo de Python">
+                </div>
+                <div class="language-description">
+                    <p>Descripción de Python: su popularidad, usos (ciencia de datos, IA, desarrollo web, etc.).</p>
+                    <p>Podrías incluir una animación que muestre un código Python simple ejecutándose paso a paso.</p>
+                </div>
+            </div>
+            <div class="animation python-animation">
+                </div>
+        </section>
+
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <div class="language-info">
+                <div class="language-image">
+                    <img src="javascript-logo.png" alt="Logo de JavaScript">
+                </div>
+                <div class="language-description">
+                    <p>Descripción de JavaScript: su papel en el desarrollo web frontend y backend, interactividad, etc.</p>
+                    <p>Una animación podría mostrar cómo JavaScript manipula elementos en una página web.</p>
+                </div>
+            </div>
+            <div class="animation javascript-animation">
+                </div>
+        </section>
+
+        <section id="java">
+            <h2>Java</h2>
+            <div class="language-info">
+                <div class="language-image">
+                    <img src="java-logo.png" alt="Logo de Java">
+                </div>
+                <div class="language-description">
+                    <p>Descripción de Java: su uso en aplicaciones empresariales, Android, etc.</p>
+                    <p>Una animación podría ilustrar la máquina virtual de Java (JVM).</p>
+                </div>
+            </div>
+            <div class="animation java-animation">
+                </div>
+        </section>
+
+        <section id="conclusiones">
+            <h2>Conclusiones</h2>
+            <p>Resumen de los lenguajes y un mensaje final.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explora la Programación</p>
+    </footer>
+
+    <script src="script.js"></script>
     <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "1526e267-c1f0-45bc-9e47-0024211bb532", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "69e4855f-5626-4c18-8d59-0127a3c24015", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "1526e267-c1f0-45bc-9e47-0024211bb532", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "69e4855f-5626-4c18-8d59-0127a3c24015", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
 </body>
 </html>
-

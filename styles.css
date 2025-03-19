@@ -1,0 +1,175 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.language-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.language-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.language-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.language-description {
+    flex-grow: 1;
+}
+
+.animation {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center; /* Para centrar contenido dentro */
+}
+
+/* Estilos específicos para animaciones (ejemplos) */
+.intro-animation {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-animation::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    animation: moveCircle 2s infinite alternate;
+}
+
+.python-animation {
+    height: 150px;
+    background-color: #e6f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.python-animation::before {
+    content: '🐍'; /* Emoji de serpiente (Python) */
+    font-size: 2em;
+    animation: spin 3s linear infinite;
+}
+
+.javascript-animation {
+    height: 120px;
+    background-color: #fffbe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.javascript-animation::before {
+    content: '<>'; /* Símbolos de HTML (JavaScript trabaja con HTML) */
+    font-size: 2em;
+    animation: bounce 1s infinite alternate;
+}
+
+.java-animation {
+    height: 180px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.java-animation::before {
+    content: '☕'; /* Emoji de taza de café (Java) */
+    font-size: 2.5em;
+    animation: pulse 1.5s infinite alternate;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animaciones con keyframes */
+@keyframes moveCircle {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(100% - 40px)); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
